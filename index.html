@@ -32,10 +32,7 @@
 
     <div class="form">
       <div class="card--form flex__modify">
-        <div class="close_btn">
-          <!-- Here make a close button which on clicking will set the display of form to block. -->
-        </div>
-        <form id="form_card" action="#" onsubmit="chg_display(),run()">
+        <form id="form_card" onsubmit="chg_display(),run()" method="dialog">
           <h3>Add New Book</h3>
           <input type="text" placeholder="Title" id="text" required />
           <input type="text" placeholder="Author" id="Author" required />
