@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library App</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <nav class="flex">
+          <ul class="item-list flex">
+            <li class="items flex flex-center"><a href="#">HOME</a></li>
+            <li class="items flex flex-center"><a href="#">PRICE</a></li>
+            <li class="items flex flex-center"><a href="#">FEEDBACK</a></li>
+          </ul>
+          <ul class="item-list_2 flex flex-center">
+            <li class="items"><a href="#">Sign Up</a></li>
+            <li class="items item--modify"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="second">
+      <div class="container center">
+        <button id="add_option" onclick="chg_display()">+ Add book</button>
+      </div>
+    </div>
+
+    <div class="form">
+      <div class="card--form flex__modify">
+        <div class="close_btn">
+          <!-- Here make a close button which on clicking will set the display of form to block. -->
+        </div>
+        <form id="form_card" action="#" onsubmit="chg_display(),run()">
+          <h3>Add New Book</h3>
+          <input type="text" placeholder="Title" id="text" required />
+          <input type="text" placeholder="Author" id="Author" required />
+          <input type="number" placeholder="Pages" id="Pages" required />
+          <div class="flex read">
+            Have you read it?
+            <input type="checkbox" id="Checkbox" />
+          </div>
+          <button id="btn-submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container wrap">
+      <div class="card">
+        <div id="flex_card">
+          <p>Name :</p>
+          <p class="label_name">Harry the potter</p>
+        </div>
+        <div id="flex_card">
+          <p>Author :</p>
+          <p class="label_author">Mr. Alex Wattson</p>
+        </div>
+        <div id="flex_card">
+          <p>Pages :</p>
+          <p class="label_pages">339</p>
+        </div>
+        <div class="card_btn flex__modify">
+          <button class="btn_card" id="readornot">Not read</button>
+          <button class="btn_card" id="remove">Remove</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

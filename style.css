@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --style: "Poppins", sans-serif;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: rgb(229, 229, 229);
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  padding: 0;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.item-list,
+.item-list_2 {
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: var(--style);
+}
+.item-list {
+  width: 30%;
+}
+.item-list_2 {
+  width: 15%;
+}
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.container {
+  margin: 0 auto;
+  width: 85%;
+  max-width: 1200px;
+}
+
+.flex-center {
+  align-items: center;
+}
+.item--modify {
+  background-color: rgb(249, 249, 249);
+  padding: 0.2em 1em;
+  text-align: center;
+  border-radius: 100px;
+}
+.center {
+  text-align: center;
+}
+#add_option {
+  margin: 1.5em auto;
+  width: 17%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  font-family: var(--style);
+  border: none;
+  background-color: white;
+}
+
+#add_option:hover {
+  background-color: rgb(229, 229, 229);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.form {
+  display: none;
+  background-color: rgb(229, 229, 229);
+}
+.status {
+  display: block;
+}
+
+.flex__modify {
+  display: flex;
+  flex-direction: column;
+}
+h3 {
+  margin: 0.3em;
+}
+.card--form {
+  border-radius: 10px;
+  padding: 0.5em;
+  margin: 0 auto;
+  width: 20%;
+  font-size: 1rem;
+  text-align: center;
+  font-family: var(--style);
+  margin-top: 13%;
+  background-color: rgb(180, 181, 182);
+}
+
+#text,
+#Author,
+#Pages,
+.read,
+#btn-submit {
+  color: rgb(0, 0, 0);
+  width: 90%;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  padding: 0.3em;
+  border-radius: 5px;
+  font-family: inherit;
+  margin: 0 auto;
+  margin-bottom: 1.2em;
+}
+.read {
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  font-weight: bolder;
+}
+#Checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+#btn-submit {
+  font-family: var(--style);
+  color: black;
+  font-weight: bolder;
+  background-color: rgb(62, 154, 229);
+  cursor: pointer;
+}
+/* 
+.navbar.myStyle {
+  background-color: rgb(75, 73, 73);
+}
+.second.myStyle {
+  background-color: rgb(75, 73, 73);
+} */
+
+.myStyle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.card {
+  width: 32%;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  box-shadow: 0px 1px 4px grey;
+}
+
+#flex_card {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-family: var(--style);
+  margin-bottom: 1em;
+}
+
+p:nth-child(1) {
+  font-weight: bolder;
+}
+
+.label_name,
+.label_author,
+.label_pages {
+  text-align: center;
+  width: 70%;
+}
+
+.card_btn {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.btn_card {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0.3em;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(189, 182, 182);
+  cursor: pointer;
+  padding: 0.5em;
+  font-family: var(--style);
+}
+.btn_card:hover {
+  opacity: 0.8;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
